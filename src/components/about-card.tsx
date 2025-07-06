@@ -29,8 +29,9 @@ export function AboutCard({ title, description, subTitle }: AboutCardProp) {
           {description}
         </Typography>
         <Button color="white" size="sm"
+          onClick={() => window.location.href = "http://192.168.0.138:8096"}
         {...({} as any)}>
-          view details
+          Go to {title}
         </Button>
       </CardBody>
     </Card>

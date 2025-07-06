@@ -13,7 +13,7 @@ function Hero() {
           WELCOME!
         </Typography>
         <Typography variant="h1" color="white" className="lg:max-w-3xl" {...({} as any)}>
-          YOUVE ENTERED NICOIt&apos;S HOMELAB!
+          YOUVE ENTERED NICO&apos;S HOMELAB!
         </Typography>
         <Typography
           variant="lead"
@@ -21,16 +21,16 @@ function Hero() {
           className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl"
           {...({} as any)}
         >
-          Below are different services within my network that you can use with the 
+          Below are different services within my network that you can USE with the 
           RIGHT credentials.
         </Typography>
         <div className="flex items-center gap-4">
-          <Button variant="gradient" color="white" {...({} as any)}>
+          {/* <Button variant="gradient" color="white" {...({} as any)}>
             Get started
-          </Button>
-          <IconButton className="rounded-full bg-white p-6" {...({} as any)}>
+          </Button> */}
+          {/* <IconButton className="rounded-full bg-white p-6" {...({} as any)}>
             <PlayIcon className="h-4 w-4 text-gray-900" />
-          </IconButton>
+          </IconButton> */}
         </div>
       </div>
     </div>
