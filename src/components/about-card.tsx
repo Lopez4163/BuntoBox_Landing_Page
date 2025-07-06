@@ -39,7 +39,7 @@ export function AboutCard({ title, description, subTitle, siteUrl, bgImage }: Ab
     {description}
   </Typography>
   <a href={siteUrl} target="_blank" rel="noopener noreferrer" className="z-10">
-    <Button color="white" size="sm">
+    <Button color="white" size="sm" {...({} as any)}>
       Go to {title}
     </Button>
   </a>
