@@ -86,17 +86,19 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar
-      shadow={false}
-      fullWidth
-      blurred={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
-      {...({} as any)}
-    >
+<MTNavbar
+  shadow={false}
+  fullWidth
+  blurred={false}
+  className={`fixed top-0 z-50 border-0 transition-colors duration-300 ${
+    isScrolling ? "bg-gray-900" : "bg-transparent"
+  }`}
+  {...({} as any)}
+>
+
       <div className="container mx-auto flex items-center justify-between">
         <Typography
-          color={isScrolling ? "blue-gray" : "white"}
+          color={isScrolling ? "white" : "white"}
           className="text-lg font-bold"
           {...({} as any)}
         >
@@ -104,15 +106,15 @@ export function Navbar() {
         </Typography>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
-            isScrolling ? "text-gray-900" : "text-white"
+            isScrolling ? "text-white" : "text-white"
           }`}
         >
-          {NAV_MENU.map(({ name, icon: Icon, href }) => (
+          {/* {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
               <Icon className="h-5 w-5" />
               <span>{name}</span>
             </NavItem>
-          ))}
+          ))} */}
         </ul>
         {/* <div className="hidden items-center gap-4 lg:flex">
           <Button color={isScrolling ? "gray" : "white"} variant="text">
@@ -122,9 +124,9 @@ export function Navbar() {
             <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
           </a>
         </div> */}
-        <IconButton
+        {/* <IconButton
           variant="text"
-          color={isScrolling ? "gray" : "white"}
+          color={isScrolling ? "white" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
           {...({} as any)}
@@ -134,9 +136,9 @@ export function Navbar() {
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </IconButton> */}
       </div>
-      <Collapse open={open}>
+      {/* <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-gray-900">
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -153,7 +155,7 @@ export function Navbar() {
             </a>
           </div>
         </div>
-      </Collapse>
+      </Collapse> */}
     </MTNavbar>
   );
 }

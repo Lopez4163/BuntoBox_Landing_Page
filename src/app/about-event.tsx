@@ -5,35 +5,43 @@ import AboutCard from "@/components/about-card";
 
 const EVENT_INFO = [
   {
-    title: "JellyFin",
-    description:
-      "Stream Tv shows, movies, and music with JellyFin, the open-source media server.",
-    subTitle: "Media Server",
-  },
-  {
     title: "My Portfolio",
     description:
       "Explore my portfolio to see my projects, skills, and experiences that showcase my journey in the tech world.",
     subTitle: "Portfolio",
+    siteUrl: "http://nicholaslopez.work/#projects",
+    bgImage : "/image/port-pic.png"
   },
   {
     title: "Queens Tech Bros",
     description:
       "Check out my IT solutions company, Queens Tech Bros, where we provide innovative tech solutions for businesses.",
     subTitle: "IT Solutions",
+    siteUrl: "https://queenstechbros.com",
+    bgImage : "/image/qtb-pic.png"
   },
   {
     title: "Joses Motorcycle Repairs",
     description:
       "Discover Joses Motorcycle Repairs, where we offer expert motorcycle repair services to keep your ride in top shape.",
     subTitle: "Motorcycle Repairs",
+    siteUrl: "https://josemoto.netlify.app",
+    bgImage : "/image/jm-pic.png"
+  },
+  {
+    title: "JellyFin",
+    description:
+      "Stream Tv shows, movies, and music with JellyFin, the open-source media server.",
+    subTitle: "Media Server",
+    siteUrl: "https://nicosmediajelly.duckdns.org",
+    bgImage : "/image/jelly-pic.png"
   },
 ];
 
 export function AboutEvent() {
   return (
     <section className="container mx-auto flex flex-col items-center px-4 py-10">
-    <Typography variant="h3" className="text-center mb-2 text-orange-500" {...({} as any)}>
+    <Typography variant="h3" className="text-center mb-2 text-white" {...({} as any)}>
       SERVICES
     </Typography>
 
@@ -50,7 +58,7 @@ export function AboutEvent() {
         business leader looking to harness the power of AI, this conference is
         designed to inspire, educate, and connect.
       </Typography> */}
-      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
+      <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-10 ">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />
         ))}

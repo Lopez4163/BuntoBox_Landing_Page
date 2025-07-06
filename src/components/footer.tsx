@@ -32,7 +32,7 @@ export function Footer() {
             href="https://www.material-tailwind.com"
             target="_blank"
             variant="h6"
-            className="text-gray-900"
+            className="text-white"
             {...({} as any)}
           >
             Material Tailwind
@@ -45,7 +45,7 @@ export function Footer() {
                   href="#"
                   variant="small"
                   color="white"
-                  className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
+                  className="text-white font-normal hover:!text-purple-300 transition-colors"
                   {...({} as any)}
                 >
                   {link}
@@ -54,19 +54,19 @@ export function Footer() {
             ))}
           </ul>
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text"
+            <IconButton size="sm" color="white" variant="text"
             {...({} as any)}>
               <i className="fa-brands fa-twitter text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text"
+            <IconButton size="sm" color="white" variant="text"
             {...({} as any)}>
               <i className="fa-brands fa-youtube text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text"
+            <IconButton size="sm" color="white" variant="text"
             {...({} as any)}>
               <i className="fa-brands fa-instagram text-lg" />
             </IconButton>
-            <IconButton size="sm" color="gray" variant="text"
+            <IconButton size="sm" color="white" variant="text"
             {...({} as any)}>
               <i className="fa-brands fa-github text-lg" />
             </IconButton>

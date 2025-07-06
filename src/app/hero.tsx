@@ -10,10 +10,10 @@ function Hero() {
     <div className="grid min-h-screen px-8">
       <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
         <Typography variant="h3" color="white" className="mb-2" {...({} as any)}>
-          WELCOME!
+          Welcome to My Network
         </Typography>
         <Typography variant="h1" color="white" className="lg:max-w-3xl" {...({} as any)}>
-          YOUVE ENTERED NICO&apos;S HOMELAB!
+          YOUV&apos;E ENTERED NICO&apos;S HOMELAB!
         </Typography>
         <Typography
           variant="lead"
@@ -21,8 +21,7 @@ function Hero() {
           className="mt-1 mb-12 w-full md:max-w-full lg:max-w-2xl"
           {...({} as any)}
         >
-          Below are different services within my network that you can USE with the 
-          RIGHT credentials.
+          Explore the internal services running on my self-hosted infrastructure. Tools, dashboards, and experiments — available with the right credentials.
         </Typography>
         <div className="flex items-center gap-4">
           {/* <Button variant="gradient" color="white" {...({} as any)}>
