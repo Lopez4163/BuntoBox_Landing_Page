@@ -1,3 +1,4 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+a[href*="material-tailwind.com"] { display: none !important; }

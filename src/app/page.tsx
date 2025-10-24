@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, {useEffect} from "react";
 import Image from "next/image";
 import { Bars3Icon, XMarkIcon, ArrowDownCircleIcon } from "@heroicons/react/24/solid";
 
@@ -116,7 +116,7 @@ function CardLink({ item }: { item: (typeof SERVICE_CARDS)[number] }) {
         <img
           src={item.bgImage}
           alt=""
-          className="absolute inset-0 z-0 h-full w-full object-cover opacity-80 group-hover:opacity-95 transition"
+          className="absolute inset-0 z-0 h-full w-full object-cover opacity-80 group-hover:opacity-95 transitions"
           onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
         />
       )}
@@ -152,6 +152,7 @@ function SimpleNavbar() {
 
   const items = [
     { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
     { href: "#services", label: "Services" },
     { href: "#links", label: "Quick Links" },
     { href: "#contact", label: "Contact" },
@@ -392,6 +393,64 @@ export default function HomePage() {
         </div>
       </Container>
     </section> */}
+    <section id="about" className="py-20 border-t border-white/10">
+      <Container>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Left Text Section */}
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold">About this HomeLab</h2>
+            <p className="mt-4 text-white/80 leading-relaxed">
+              Nico’s HomeLab is a self-hosted environment built on a Lenovo ThinkCentre running
+              <span className="text-fuchsia-400 font-semibold"> Ubuntu Server</span>. It’s powered by
+              <span className="text-sky-400 font-semibold"> Docker</span> containers and secured
+              behind an <span className="text-emerald-400 font-semibold">NGINX</span> reverse proxy.
+              Dynamic DNS is handled through <span className="text-yellow-300 font-semibold">DuckDNS</span>,
+              making the entire setup accessible remotely with HTTPS encryption.
+            </p>
+
+            <div className="mt-8 grid grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-xs text-white/60">Operating System</p>
+                <p className="mt-1 text-lg font-semibold">Ubuntu Server</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-xs text-white/60">Web Server</p>
+                <p className="mt-1 text-lg font-semibold">NGINX Reverse Proxy</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-xs text-white/60">Containerization</p>
+                <p className="mt-1 text-lg font-semibold">Docker Engine</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                <p className="text-xs text-white/60">DNS / SSL</p>
+                <p className="mt-1 text-lg font-semibold">DuckDNS + Let’s Encrypt</p>
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-2 text-xs">
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">Ubuntu</span>
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">Docker</span>
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">NGINX</span>
+              <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1">DuckDNS</span>
+            </div>
+          </div>
+
+          {/* Right Image Section */}
+      <div className="flex justify-center">
+      <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] shadow-lg inline-block">
+        <Image
+          src="/image/thinkcentre.jpg"
+          alt="Lenovo ThinkCentre HomeLab Server"
+          width={600}
+          height={500}
+          className="rounded-2xl object-contain"
+          priority
+        />
+      </div>
+    </div>
+        </div>
+      </Container>
+    </section>
 
 
       {/* METRICS */}
@@ -466,12 +525,12 @@ export default function HomePage() {
       <Footer />
 
       {/* Badge (optional) */}
-      <a href="https://www.material-tailwind.com" target="_blank" className="fixed bottom-4 right-4">
+      {/* <a href="https://www.material-tailwind.com" target="_blank" className="fixed bottom-4 right-4">
         <span className="inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold text-gray-900 bg-white border border-white/50 shadow">
           <Image src="https://www.material-tailwind.com/favicon.png" alt="Material Tailwind" width={20} height={20} />
           Built with Tailwind
         </span>
-      </a>
+      </a> */}
     </main>
   );
 }
