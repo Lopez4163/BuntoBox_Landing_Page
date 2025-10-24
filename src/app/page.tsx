@@ -514,9 +514,9 @@ export default function HomePage() {
             <p className="mt-2 text-white/85">
               Need access or have a request? Email
               {" "}
-              <a className="underline" href="mailto:nicolaslopez8631@gmail.com">nicolaslopez8631@gmail.com</a>
+              <a className="underline" href="mailto:nlopez6499@gmail.com">nlopez6499@gmail.com</a>
               {" "}or text{" "}
-              <a className="underline" href="sms:+17185292288">(718) 529‑2288</a>.
+              <a className="underline" href="sms:+17185292288">(718) 760-2412</a>.
             </p>
           </div>
         </Container>
