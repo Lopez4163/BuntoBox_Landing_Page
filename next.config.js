@@ -4,7 +4,7 @@ const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
 
   // ✅ App Router static export
-  // output: 'export',
+  output: 'export',
 
   // ✅ Required when using next/image without a running optimizer
   images: { unoptimized: true },
