@@ -435,8 +435,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right Image Section */}
-      <div className="flex justify-center">
+      {/* Right Image Section */}
+      {/* <div className="flex justify-center">
       <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02] shadow-lg inline-block">
         <Image
           src="/image/thinkcentre.jpg"
@@ -447,7 +447,7 @@ export default function HomePage() {
           priority
         />
       </div>
-    </div>
+    </div> */}
         </div>
       </Container>
     </section>
