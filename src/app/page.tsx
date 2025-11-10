@@ -10,6 +10,9 @@ const LINKS = [
   { label: "Queens Tech Bros", href: "https://queenstechbros.com" },
   { label: "Jose's Motorcycle Repairs", href: "https://josemoto.netlify.app" },
   { label: "Jellyfin (Media)", href: "https://nicosmediajelly.duckdns.org" },
+  { label: "Drone Tracker (Rust)", href: "https://lopez4163.github.io/drone_tracker/" },
+
+  
 ];
 
 const STACK_TOOLS = [
@@ -62,6 +65,13 @@ const SERVICE_CARDS: Array<{
     siteUrl: "https://nicosmediajelly.duckdns.org",
     bgImage: "/image/jelly-pic.png",
   },
+  {
+    title: "Drone Tracker",
+    description: "Track drones in real-time with this Rust web app.",
+    subTitle: "Rust App",
+    siteUrl: "https://lopez4163.github.io/drone_tracker/",
+    bgImage: "/image/drone-pic.png",
+  }
 ];
 
 // ---- UI ------------------------------------------------------------------
